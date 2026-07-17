@@ -135,6 +135,13 @@ public class GameManager : MonoBehaviour
     public void RespawnAvatar()
     {
         avatarController.Teleport(lastCheckpointPosition);
+
+        ZombieBehavior[] zombie_behaviors = FindObjectsByType<ZombieBehavior>(FindObjectsSortMode.None);
+
+        foreach (ZombieBehavior zombie in zombie_behaviors)
+        {
+            zombie.Respawn();
+        }
     }
 
     public void RestartGame()
@@ -151,7 +158,7 @@ public class GameManager : MonoBehaviour
             debugText.text = "-";
         }
     }
-
+#if UNITY_EDITOR
     private void OnDrawGizmos()
     {
         if (lastEmitTime < 2f)
@@ -161,4 +168,5 @@ public class GameManager : MonoBehaviour
 
         }
     }
+#endif
 }

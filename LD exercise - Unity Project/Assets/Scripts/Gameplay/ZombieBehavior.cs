@@ -12,12 +12,17 @@ public class ZombieBehavior : MonoBehaviour
     public float viewDistance = 5f;
     public TMP_Text debugText;
 
+    public Animator animator;
+
     [HideInInspector] public bool isDead;
     [HideInInspector] public ModifiedFirstPersonController avatarController;
 
     private NavMeshAgent navAgent;
     private float stateTime;
     private GameManager gameManager;
+
+    private Vector3 originalPosition;
+    private Quaternion originalRotation;
 
     private enum ZombieState
     {
@@ -32,6 +37,9 @@ public class ZombieBehavior : MonoBehaviour
     {
         navAgent = GetComponent<NavMeshAgent>();
         gameManager = FindObjectOfType<GameManager>();
+
+        originalPosition = transform.position;
+        originalRotation = transform.rotation;
     }
 
     void Update()
@@ -156,6 +164,8 @@ public class ZombieBehavior : MonoBehaviour
             case ZombieState.Attracted:
                 break;
             case ZombieState.Dead:
+                if (animator)
+                    animator.SetBool("Dead", false);
                 break;
         }
 
@@ -175,8 +185,27 @@ public class ZombieBehavior : MonoBehaviour
                 break;
             case ZombieState.Dead:
                 debugText.text = "x";
+                navAgent.enabled = false;
+                if (animator)
+                    animator.SetBool("Dead", true);
                 break;
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "ZombieKill")
+        {
+            SwitchState(ZombieState.Dead);
+        }
+    }
+
+    public void Respawn()
+    {
+        SwitchState(ZombieState.Idle);
+        navAgent.ResetPath();
+        transform.position = originalPosition;
+        transform.rotation = originalRotation;
     }
 
     private void OnDrawGizmos()

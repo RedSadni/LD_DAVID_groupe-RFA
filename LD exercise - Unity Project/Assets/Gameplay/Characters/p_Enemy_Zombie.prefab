@@ -459,6 +459,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2424639278643495103, guid: 5e479c920f622584b90f19851447a34c, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 7284418001028420129}
+    - target: {fileID: 2424639278643495103, guid: 5e479c920f622584b90f19851447a34c, type: 3}
       propertyPath: viewAngle
       value: 30
       objectReference: {fileID: 0}
@@ -540,10 +544,40 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8055156169722794973, guid: 5e479c920f622584b90f19851447a34c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1261833783316724585}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4050610202379847947, guid: 5e479c920f622584b90f19851447a34c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7284418001028420129}
   m_SourcePrefab: {fileID: 100100000, guid: 5e479c920f622584b90f19851447a34c, type: 3}
 --- !u!4 &2057499491281484720 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8055156169722794973, guid: 5e479c920f622584b90f19851447a34c, type: 3}
   m_PrefabInstance: {fileID: 8305795745139566701}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5436607527730159974 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4050610202379847947, guid: 5e479c920f622584b90f19851447a34c, type: 3}
+  m_PrefabInstance: {fileID: 8305795745139566701}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7284418001028420129
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5436607527730159974}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
