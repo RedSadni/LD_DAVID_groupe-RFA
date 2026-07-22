@@ -358,7 +358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9127984930121572520, guid: 56e57d5d3a9db514582fa1ca6ca399fd, type: 3}
       propertyPath: 'scenesToLoad.Array.data[0]'
-      value: sc_Museum
+      value: sc_Ld_metrics
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
