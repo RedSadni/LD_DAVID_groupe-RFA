@@ -520,7 +520,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5315859349148985064, guid: 5e479c920f622584b90f19851447a34c, type: 3}
       propertyPath: m_Speed
-      value: 3.5
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5315859349148985064, guid: 5e479c920f622584b90f19851447a34c, type: 3}
       propertyPath: m_AngularSpeed
