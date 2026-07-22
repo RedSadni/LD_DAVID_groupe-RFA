@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/sc_Bootstrap.unity
     guid: 7f4c80382aec56547ad21176b7166a43
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/sc_Museum.unity
     guid: bca2d618e275b5d459805b7700bdf7b6
+  - enabled: 1
+    path: Assets/Scenes/sc_Ld_metrics.unity
+    guid: cd187c8e2d1d1244f8fd8497303b0312
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
   m_UseUCBPForAssetBundles: 0
