@@ -464,11 +464,11 @@ PrefabInstance:
       objectReference: {fileID: 7284418001028420129}
     - target: {fileID: 2424639278643495103, guid: 5e479c920f622584b90f19851447a34c, type: 3}
       propertyPath: viewAngle
-      value: 30
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2424639278643495103, guid: 5e479c920f622584b90f19851447a34c, type: 3}
       propertyPath: viewDistance
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2424639278643495103, guid: 5e479c920f622584b90f19851447a34c, type: 3}
       propertyPath: delayToLoseInterest
@@ -520,7 +520,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5315859349148985064, guid: 5e479c920f622584b90f19851447a34c, type: 3}
       propertyPath: m_Speed
-      value: 2.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5315859349148985064, guid: 5e479c920f622584b90f19851447a34c, type: 3}
       propertyPath: m_AngularSpeed
