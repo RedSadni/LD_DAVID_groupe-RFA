@@ -464,7 +464,7 @@ PrefabInstance:
       objectReference: {fileID: 7284418001028420129}
     - target: {fileID: 2424639278643495103, guid: 5e479c920f622584b90f19851447a34c, type: 3}
       propertyPath: viewAngle
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2424639278643495103, guid: 5e479c920f622584b90f19851447a34c, type: 3}
       propertyPath: TriggerKill
