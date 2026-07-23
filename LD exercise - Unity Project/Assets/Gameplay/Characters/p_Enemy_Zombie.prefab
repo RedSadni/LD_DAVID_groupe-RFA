@@ -518,6 +518,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: p_Enemy_Zombie
       objectReference: {fileID: 0}
+    - target: {fileID: 4050610202379847947, guid: 5e479c920f622584b90f19851447a34c, type: 3}
+      propertyPath: m_TagString
+      value: Zombie
+      objectReference: {fileID: 0}
     - target: {fileID: 5315859349148985064, guid: 5e479c920f622584b90f19851447a34c, type: 3}
       propertyPath: m_Speed
       value: 5
