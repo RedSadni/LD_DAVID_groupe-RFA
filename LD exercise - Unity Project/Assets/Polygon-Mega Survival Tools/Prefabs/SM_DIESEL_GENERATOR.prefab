@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5491254443868960656}
   - component: {fileID: 5116967566215855211}
   - component: {fileID: 2509117589292547215}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_DIESEL_GENERATOR
   m_TagString: ZombieKill
   m_Icon: {fileID: 0}
@@ -163,7 +163,7 @@ GameObject:
   - component: {fileID: 8459815810630398059}
   - component: {fileID: 6443569136434122409}
   - component: {fileID: 5430530845647188204}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Spot Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}

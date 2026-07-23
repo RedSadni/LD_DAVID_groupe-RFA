@@ -11,6 +11,7 @@ public class ZombieBehavior : MonoBehaviour
     public float viewAngle = 30f;
     public float viewDistance = 5f;
     public TMP_Text debugText;
+    public GameObject TriggerKill;
 
     public Animator animator;
 
@@ -166,6 +167,8 @@ public class ZombieBehavior : MonoBehaviour
             case ZombieState.Dead:
                 if (animator)
                     animator.SetBool("Dead", false);
+                TriggerKill.SetActive(true);
+
                 break;
         }
 
@@ -188,6 +191,7 @@ public class ZombieBehavior : MonoBehaviour
                 navAgent.enabled = false;
                 if (animator)
                     animator.SetBool("Dead", true);
+                TriggerKill.SetActive(false);
                 break;
         }
     }
