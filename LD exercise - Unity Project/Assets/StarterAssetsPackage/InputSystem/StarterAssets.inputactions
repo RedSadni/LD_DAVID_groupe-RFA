@@ -314,7 +314,7 @@
                 {
                     "name": "",
                     "id": "9ab5d257-c964-4eb8-98c4-960a3acf8dfe",
-                    "path": "<Gamepad>/buttonEast",
+                    "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
@@ -339,7 +339,7 @@
                     "path": "<Gamepad>/select",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Gamepad",
+                    "groups": "Gamepad;Xbox Controller",
                     "action": "Cheat",
                     "isComposite": false,
                     "isPartOfComposite": false
